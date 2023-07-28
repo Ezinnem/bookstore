@@ -10,7 +10,7 @@ var (
 )
 
 func Connect() {
-	d, err := gorm.Open("mysql", "root:123456789/bookstore?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "ezinne:123456789@tcp(localhost:3306)/bookstore?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
@@ -20,3 +20,5 @@ func Connect() {
 func GetDB() *gorm.DB{
 	return db
 }
+
+
