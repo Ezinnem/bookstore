@@ -6,11 +6,11 @@ import (
 )
 
 var (
-	db * gorm.DB
+	db *gorm.DB
 )
 
 func Connect() {
-	d, err := gorm.Open("mysql", "<mysqlusername>:<mysqlpassword>@tcp(localhost:3306)/bookstore?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "ezinne:123456789@tcp(localhost:3306)/bookstore?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
